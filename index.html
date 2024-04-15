@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APOD Search</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Astronomy Picture of the Day</h1>
+        <form id="date-form">
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+            <button type="submit">Search</button>
+        </form>
+        <div id="apod-container" class="hide">
+            <div id="apod-image-container">
+                <img id="apod-image" alt="APOD">
+                <button id="hd-image-btn" class="hide">View HD Image</button>
+            </div>
+            <div id="apod-info">
+                <h2 id="apod-title"></h2>
+                <p id="apod-date"></p>
+                <p id="apod-explanation"></p>
+                <button id="save-favorite">Save as Favorite</button>
+            </div>
+        </div>
+        <div id="favorites-container">
+            <h2>Favorites</h2>
+            <ul id="favorites-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
